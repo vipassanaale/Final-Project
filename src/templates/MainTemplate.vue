@@ -78,6 +78,12 @@ section.container {
   margin: 0 auto;
   padding: 1rem;
 
+  /* Mobile first
+  &.router-link-active{
+  font-weight: bold;
+  }
+   */
+
   header {
     background-color: #1D84A6;
     padding: 2rem;
