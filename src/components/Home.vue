@@ -35,6 +35,35 @@ import MainTemplate from "../templates/MainTemplate.vue";
     </div>
   </section>
 
+<section class="middle-guts">
+  <div class="GTKU">
+    <div class="section-container">
+      <div class="text-container">
+          <h3>Get to Know Us</h3>
+          <p>Localz Cafe, established in the summer of 2020 by three Minnetonka High School graduates, aims to provide Lake Minnetonka visitors with fresh and delicious lake day meals. Our food is prepared with care, using nutritious ingredients and served with a perfect char. Find our current locations on our map!</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="image-container">
+          <img src="../assets/IMG_2933.jpg" alt="owners of Localz Cafe">
+        </div>
+      </div>
+  </div>
+
+      <div class="section-container">
+        <div class="catering">
+        <div class="image-container">
+          <img src="../assets/frank-zhang-uZj6OAYPqrQ-unsplash.jpg" alt="catering image">
+        </div>
+        <div class="text-container">
+          <h3>Catering</h3>
+          <p>In need of food for an event? We’ve gotcha covered! Whether it’s a quaint get-together or a large gathering, let us help you curate the best event possible. Our food truck brings the same fresh, delicious meals that have made us a local favorite to your special occasion.</p>
+          <a href="#">Order Catering</a>
+        </div>
+      </div>
+  </div>
+    </section>
+
+<!--mmm
   <section class="middle-guts">
     <div class="GTKU">
         <h3>get to know us</h3>
@@ -61,12 +90,14 @@ import MainTemplate from "../templates/MainTemplate.vue";
       <img src="../assets/frank-zhang-uZj6OAYPqrQ-unsplash.jpg" alt="catering image">
     </div>
   </section>
+-->
 
   </main-template>
 
 </template>
 
 <style scoped>
+
 section.top {
   display: flex;
   max-width: 2500px;
@@ -144,13 +175,122 @@ section.top-menu{
   }
 }
 
-section.middle-guts{
-  background-color:#DC6327;
-  padding: 2rem;
+section.middle-guts {
+  background-color: #DC6327;
+  padding: 4rem 0rem 4rem 15rem ;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.middle-guts .section-container {
   display: flex;
   justify-content: space-between;
+  gap: 4rem;
+  text-align: center;
+}
 
-  .GTKU{
+.middle-guts .section-container:nth-child(odd) {
+  flex-direction: row;
+}
+
+.middle-guts .section-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.middle-guts .text-container {
+  max-width: 30%;
+  color: #f9f9f9;
+}
+
+.middle-guts .text-container h3 {
+  font-size: 27px;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.middle-guts .text-container p {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.middle-guts img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 12px;
+}
+.GTKU-img img, .catering-img img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+.GTKU {
+  max-width: 2000px;
+
+  h3{
+    font-size: 27px;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #f9f9f9;
+  }
+
+  p{
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 4rem;
+    color: #f9f9f9;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+.catering{
+  max-width: 2000px;
+
+  h3{
+    font-size: 27px;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #f9f9f9;
+  }
+
+  p{
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 4rem;
+    color: #f9f9f9;
+  }
+}
+
+
+/*
+.GTKU, .catering {
+  max-width: 600px; /* Limit width for better readability
+}
+  .GTKU, .catering, .GTKU-img, .catering-img {
+    flex: 1;
+    max-width: 45%;
+  }
+  .GTKU-img img, .catering-img img {
+    max-width: 100%; /* Scale images proportionally
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .GTKU p, .catering p {
+    color: #FFFFFF; /* Pure white text
+  } */
+ /* .GTKU{
     max-width: 500px;
 
     h3{
@@ -200,5 +340,17 @@ section.middle-guts{
       height: auto;
     }
   }
+}
+*/
+
+@media (max-width: 768px) {
+    .middle-guts .section-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .middle-guts .text-container, .middle-guts .image-container {
+      max-width: 100%;
+    }
 }
 </style>
