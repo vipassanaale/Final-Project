@@ -177,7 +177,7 @@ section.top-menu{
 
 section.middle-guts {
   background-color: #DC6327;
-  padding: 4rem 0rem 4rem 15rem ;
+  padding: 4rem 0 4rem 15rem ;
   display: flex;
   flex-direction: column;
   gap: 2rem;
