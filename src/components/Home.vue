@@ -63,34 +63,34 @@ import MainTemplate from "../templates/MainTemplate.vue";
   </div>
     </section>
 
-<!--mmm
-  <section class="middle-guts">
-    <div class="GTKU">
-        <h3>get to know us</h3>
-        <p>Localz Cafe, established in the summer of 2020 by three Minnetonka High School graduates, aims to provide Lake Minnetonka visitors with fresh and delicious lake day meals. Our food is prepared with care, using nutritious ingredients and served with a perfect char.
-          Find our current locations on our map!</p>
-        <a href="#">read more</a>
+
+  <section class="create">
+    <div class ="one">
+      <img src="../assets/IMG_2931.jpg" alt="burritos">
+       <h3>Choose your shell</h3>
+       <p>whole grain soft shells, plain corn tortillas, or Plain flour tortillas </p>
     </div>
 
-    <div class="GTKU-img">
-    <img src="../assets/IMG_2933.jpg" alt="owners of Localz Cafe">
-    </div>
+     <div class ="two">
+       <img src="../assets/IMG_2931.jpg" alt="burritos">
+        <h3>Choose your toppings</h3>
+      <p>Korean chicken, birria, or pork carnitas</p>
+     </div>
 
-    <div class="catering">
-        <h3>Catering</h3>
-        <p>In need of food for an event? We’ve gotcha covered!
-          Whether its a quaint get together or a large gathering,
-          let us help you curate the best event possible. Our food truck
-          brings the same fresh, delicious meals that have made us a local
-          favorite to you special occasion. </p>
-        <a href="#">order catering</a>
-      </div>
+     <div class ="three">
+       <img src="../assets/IMG_2931.jpg" alt="burritos">
+      <h3>Choose your sauce</h3>
+      <p>Jalapeño mayo, spicy habanero chili, or mild tomato salsa</p>
+     </div>
 
-    <div class="catering-img">
-      <img src="../assets/frank-zhang-uZj6OAYPqrQ-unsplash.jpg" alt="catering image">
-    </div>
+     <div class ="four">
+       <img src="../assets/IMG_2931.jpg" alt="burritos">
+      <h3>Time to Eat!</h3>
+      <p>Enjoy taco your taco, but don’t forget to grab a drink</p>
+     </div>
+
+      <a href="#">Order Now</a>
   </section>
--->
 
   </main-template>
 
@@ -177,171 +177,90 @@ section.top-menu{
 
 section.middle-guts {
   background-color: #DC6327;
-  padding: 4rem 0 4rem 15rem ;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  justify-items: center;
+  gap: 2rem; 
 }
 
-.middle-guts .section-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-  text-align: center;
-}
+.middle-guts {
 
-.middle-guts .section-container:nth-child(odd) {
-  flex-direction: row;
-}
-
-.middle-guts .section-container:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.middle-guts .text-container {
-  max-width: 30%;
-  color: #f9f9f9;
-}
-
-.middle-guts .text-container h3 {
-  font-size: 27px;
-  font-family: "Arial", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.middle-guts .text-container p {
-  font-size: 18px;
-  margin-bottom: 2rem;
-}
-
-.middle-guts img {
-  max-width: 45%;
-  height: auto;
-  border-radius: 12px;
-}
-.GTKU-img img, .catering-img img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 12px;
+  .section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: nowrap;
   }
 
-.GTKU {
-  max-width: 2000px;
-
-  h3{
-    font-size: 27px;
-    font-family: "Arial", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #f9f9f9;
-  }
-
-  p{
-    font-size: 18px;
-    font-family: "Arial", sans-serif;
-    margin-bottom: 4rem;
-    color: #f9f9f9;
-  }
-
-  img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-}
-
-.catering{
-  max-width: 2000px;
-
-  h3{
-    font-size: 27px;
-    font-family: "Arial", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #f9f9f9;
-  }
-
-  p{
-    font-size: 18px;
-    font-family: "Arial", sans-serif;
-    margin-bottom: 4rem;
-    color: #f9f9f9;
-  }
-}
-
-
-/*
-.GTKU, .catering {
-  max-width: 600px; /* Limit width for better readability
-}
-  .GTKU, .catering, .GTKU-img, .catering-img {
+  .text-container {
     flex: 1;
-    max-width: 45%;
-  }
-  .GTKU-img img, .catering-img img {
-    max-width: 100%; /* Scale images proportionally
-    height: auto;
-    border-radius: 12px;
-  }
+    min-width: 300px;
+    max-width: 600px;
+    color: #f9f9f9;
+    text-align: left;
 
-  .GTKU p, .catering p {
-    color: #FFFFFF; /* Pure white text
-  } */
- /* .GTKU{
-    max-width: 500px;
-
-    h3{
+    h3 {
       font-size: 27px;
-      font-family: "Arial", sans-serif;
+      font-family: "PT Sans", sans-serif;
       text-transform: uppercase;
-      margin-bottom: 2rem;
-      color: #f9f9f9;
+      margin-bottom: 1rem;
     }
 
     p{
       font-size: 18px;
-      font-family: "Arial", sans-serif;
-      margin-bottom: 4rem;
-      color: #f9f9f9;
-    }
-  }
-
-  .catering{
-    max-width: 500px;
-
-    h3{
-      font-size: 27px;
-      font-family: "Arial", sans-serif;
-      text-transform: uppercase;
+      line-height: 1.6;
       margin-bottom: 2rem;
-      color: #f9f9f9;
+      font-family: "Arial", sans-serif;
     }
 
-    p{
+    a {
+      display: inline-block;
+      background-color: #f9f9f9;
+      color: #DC6327;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
       font-size: 18px;
       font-family: "Arial", sans-serif;
-      margin-bottom: 4rem;
-      color: #f9f9f9;
     }
   }
-
-  .GTKU-img{
-    img{
-      max-width: 200%;
-      height: auto;
-    }
-  }
-  .catering-img{
-    img{
-      max-width: 100%;
-      height: auto;
-    }
+  .image-container img{
+   flex: 1;
+   max-width: 500px;
+   width: 100%;
+   height: auto;
+   border-radius: 12px;
+   object-fit: cover;
   }
 }
-*/
+
+section.create {
+  display: flex;
+  padding: 10rem 0 10rem 0;
+  
+  img {
+    max-width: 90%;
+    max-height: auto;
+    border-radius: 10px;             
+  }
+  h3{
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-family: "Arial", sans-serif;
+  }
+}
+
 
 @media (max-width: 768px) {
     .middle-guts .section-container {
