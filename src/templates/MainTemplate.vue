@@ -76,7 +76,7 @@ section.container {
   background: #FFFAEB;
   max-width: 2500px;
   margin: 0 auto;
-  padding: 1rem;
+  //padding: 1rem;
 
   /* Mobile first
   &.router-link-active{
