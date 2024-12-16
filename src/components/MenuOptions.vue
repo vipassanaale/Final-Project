@@ -22,11 +22,12 @@
       <p>Drinks</p>
     </aside>
 
-
+    <div class="order">
     <aside>
       <img src="../assets/IMG_2939.jpg" alt="birria burritos">
       <p>Order Now</p>
     </aside>
+    </div>
   </section>
 </template>
 
@@ -59,7 +60,6 @@ section.top-menu {
       font-weight: bold;
       font-size: 28px;
     }
-
     img {
       justify-content: space-between;
       margin: 3rem;
@@ -69,6 +69,9 @@ section.top-menu {
       border: solid 7px #1D84A6;
     }
   }
+  div.order{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -77,30 +80,32 @@ section.top-menu {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2rem;
-  }
 
-  section.top-menu aside {
-    flex-direction: column;
-    width: 16%;
-    text-align: center;
-  }
+    aside {
+      flex-direction: column;
+      width: 16%;
+      text-align: center;
 
-  section.top-menu aside img {
-    max-width: 80%;
-    margin-bottom: 1rem;
-    flex-direction: row;
-    border: solid 7px #1D84A6;
-  }
+      img {
+        max-width: 80%;
+        margin-bottom: 1rem;
+        flex-direction: row;
+        border: solid 7px #1D84A6;
+      }
 
-  section.top-menu aside p {
-    font-size: 22px;
+      p {
+        font-size: 22px;
+      }
+    }
   }
-
-  section.top-menu h2 {
+  h2 {
     width: 100%;
     font-size: 36px;
     text-align: center;
     margin-bottom: 2rem;
+  }
+  div.order{
+    display: inline-block;
   }
 }
 

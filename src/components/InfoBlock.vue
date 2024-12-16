@@ -9,7 +9,7 @@
       <p>Localz Cafe, established in the summer of 2020 by three Minnetonka High School graduates, aims to provide
         Lake Minnetonka visitors with fresh and delicious lake day meals. Our food is prepared with care, using
         nutritious ingredients and served with a perfect char. Find our current locations on our map!</p>
-      <a class="action-btn" href="#">Read More</a>
+      <a class="white-btn" href="#">Read More</a>
     </aside>
 
     <aside>
@@ -25,7 +25,7 @@
       <p>In need of food for an event? We’ve gotcha covered! Whether it’s a quaint get-together or a large
         gathering, let us help you curate the best event possible. Our food truck brings the same fresh, delicious
         meals that have made us a local favorite to your special occasion.</p>
-      <a class="action-btn" href="#">Order Catering</a>
+      <a class="white-btn" href="#">Order Catering</a>
     </aside>
   </section>
 </template>

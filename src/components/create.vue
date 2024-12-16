@@ -35,7 +35,8 @@
     </aside>
   </section>
 
-  <a href="#">Order Now</a>
+  <a class="orange-btn" href="#">Order Now</a>
+
 </template>
 
 <style scoped>
@@ -45,11 +46,13 @@ h2{
   font-family: "PT Sans", sans-serif;
   font-size: 28px;
   text-align: center;
+  margin-top: 2rem;
 }
 
 section.create {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 
   h3 {
     font-size: 18px;
@@ -70,15 +73,23 @@ section.create {
     font-family: "Arial", sans-serif;
   }
 }
+a.orange-btn {
+  text-align: center;
+margin-bottom: 2rem;
+}
 
-@media screen and (width > 600px) {
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  aside{
-    flex-basis: 48%;
+@media screen and (min-width: 600px) {
+  section.create {
+    flex-direction: row;
+    gap: 2rem;
   }
 
-
+  aside {
+    flex-basis: 22%;
+  }
+  a.orange-btn {
+    text-align: center;
+  }
 }
+
 </style>
